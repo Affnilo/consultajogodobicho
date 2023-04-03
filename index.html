@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Jogo do bicho</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+  <body>
+   
+    <h1>Consulta Jogo do Bicho:</h1>
+    <p>
+      <h3>Tabela do Jogo do Bicho:</h3> Cada um dos bichos é representado por um número que vai do 1 até o 25,<br>
+    Esse número do bicho é chamado de grupo.
+Cada grupo/bicho contém 4 números que são chamados de dezenas, no total temos 100 dezenas. Pois são 25 bichos/grupos, cada grupo com 4 dezenas dá-se 100 no total. Digite no campo abaixo a Dezena ou Escolha o animal e confira as Dezenas correspondentes.
+    </p>
+    <p>
+      Saiba mais em <a class="linkjgbixo" href="https://www.ojogodobicho.com/deu_no_poste.htm">Jogodobicho.com</a>
+    </p>
+
+    <form onsubmit="event.preventDefault();">
+      <label for="dezena">Digite a dezena (00 a 99):</label>
+      <input type="text" id="dezena" name="dezena">
+      <button type="submit" onclick="mostrarAnimal()">Enviar</button>
+    </form>
+
+    <div class="resultado2" id="resultado"></div>
+    <div class="imagem-animal" id="imagem"></div>
+
+    <h2>Consultar dezenas por animal</h2>
+
+<label for="animal">Escolha um animal:</label>
+<select name="animal" id="animal">
+  <option value="Avestruz">Avestruz</option>
+  <option value="Águia">Águia</option>
+  <option value="Burro">Burro</option>
+  <option value="Borboleta">Borboleta</option>
+  <option value="Cachorro">Cachorro</option>
+  <option value="Cabra">Cabra</option>
+  <option value="Carneiro">Carneiro</option>
+  <option value="Camelo">Camelo</option>
+  <option value="Cobra">Cobra</option>
+  <option value="Coelho">Coelho</option>
+  <option value="Cavalo">Cavalo</option>
+  <option value="Elefante">Elefante</option>
+  <option value="Galo">Galo</option>
+  <option value="Gato">Gato</option>
+  <option value="Jacaré">Jacaré</option>
+  <option value="Leão">Leão</option>
+  <option value="Macaco">Macaco</option>
+  <option value="Porco">Porco</option>
+  <option value="Pavão">Pavão</option>
+  <option value="Perú">Perú</option>
+  <option value="Touro">Touro</option>
+  <option value="Tigre">Tigre</option>
+  <option value="Urso">Urso</option>
+  <option value="Veado">Veado</option>
+  <option value="Vaca">Vaca</option>
+</select>
+<button onclick="mostrarDezenas()">Consultar</button>
+
+
+<div id="resultado">
+  <p>Dezenas correspondentes: <span id="dezenas"></span></p>
+</div>
+
+
+<footer>
+  <div class="footer-container">
+    <nav>
+      <ul>
+        <li><a href="https://www.instagram.com/alvdnlo/"><img class="icons" src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></img> </i></a></li>
+        <li><a href="https://github.com/Affnilo"><img class="icons" src="https://cdn-icons-png.flaticon.com/512/733/733553.png"></img></a></li>
+      </ul>
+    </nav> 
+  </div>
+</footer>
+ <script src="script.js"></script>
+  </body>
+</html>
+
